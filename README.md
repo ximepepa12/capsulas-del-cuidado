@@ -1,6 +1,6 @@
-# Cápsulas del Cuidado - Hospital Santa Sofía
+# Cápsulas del Cuidado - SST
 
-Portal web interactivo de **Seguridad y Salud en el Trabajo (SST)** diseñado para el Hospital Santa Sofía ("Salud y bienestar para todos"). Este proyecto transforma una infografía estática en una experiencia web moderna, educativa y dinámica para el personal médico, asistencial y administrativo.
+Portal web interactivo de **Seguridad y Salud en el Trabajo (SST)** diseñado para centros asistenciales e instituciones de salud ("Salud y bienestar para todos"). Este proyecto transforma una infografía estática en una experiencia web moderna, educativa y dinámica para el personal médico, asistencial y administrativo.
 
 ---
 
@@ -13,7 +13,7 @@ Portal web interactivo de **Seguridad y Salud en el Trabajo (SST)** diseñado pa
 ## ✨ Características Principales e Interactividad
 
 1. **Barra de Navegación y Cabecera Institucional**:
-   - Logotipo y eslogan oficial del Hospital Santa Sofía.
+   - Cabecera institucional con eslogan de seguridad.
    - Navegación rápida entre secciones: Inicio, Riesgo Biológico, Elementos de Protección Personal (EPP), Bioseguridad, Plan Hospitalario, PVE (Vigilancia Epidemiológica), Pausas Activas y Encuestas.
 
 2. **Tarjetas de Cápsulas con Modales Interactivos**:
