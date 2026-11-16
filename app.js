@@ -32,14 +32,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const modalContentData = {
         'modal-riesgo-biologico': `
-            <h2 style="color: var(--accent-red); margin-bottom: 15px;"><i class="fa-solid fa-biohazard"></i> Riesgo Biológico</h2>
-            <p><strong>Cápsula Informativa SST:</strong> La exposición a agentes biológicos en entornos hospitalarios requiere máxima atención y cumplimiento estricto de normas de bioseguridad.</p>
-            <ul style="margin: 15px 0 20px 20px; display: flex; flex-direction: column; gap: 10px;">
-                <li>Uso de guantes, mascarillas y protección ocular en atención directa.</li>
-                <li>Descarte inmediato de elementos cortopunzantes en recipientes rígidos (Guardianes).</li>
-                <li>Lavado de manos clínico antes y después de cada paciente.</li>
-            </ul>
-            <button class="btn-primary" onclick="closeModalWindow()">Entendido</button>
+            <h2 style="color: var(--accent-red); margin-bottom: 15px;"><i class="fa-solid fa-biohazard"></i> Guía Visual: Riesgo Biológico</h2>
+            <p><strong>¿Qué es?</strong> Posibilidad de sufrir afectación en la salud por contacto con microorganismos o materiales contaminados.</p>
+            <h4 style="margin-top: 15px; color: var(--primary-color);">Vías de Ingreso:</h4>
+            <p style="font-size: 0.9rem; margin-bottom: 10px;">Respiratoria, percutánea, mucosa y piel no intacta.</p>
+            <h4 style="margin-top: 15px; color: #D97706;"><i class="fa-solid fa-triangle-exclamation"></i> ¿Qué hacer ante una exposición?</h4>
+            <ol style="margin: 10px 0 20px 20px; font-size: 0.9rem; display: flex; flex-direction: column; gap: 6px;">
+                <li>Suspende la actividad de inmediato.</li>
+                <li>Realiza primeros cuidados (lavado con agua y jabón).</li>
+                <li>Informa a tu jefe inmediato y a SST.</li>
+                <li>Acude al servicio de salud para valoración.</li>
+                <li>Reporta el evento formalmente.</li>
+            </ol>
+            <button class="btn-primary" onclick="switchSection('riesgo-biologico'); closeModalWindow();">Ver Guía Completa</button>
         `,
         'modal-epp': `
             <h2 style="color: var(--primary-color); margin-bottom: 15px;"><i class="fa-solid fa-shield-halved"></i> Elementos de Protección Personal (EPP)</h2>
