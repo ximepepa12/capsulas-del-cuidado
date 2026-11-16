@@ -60,14 +60,17 @@ document.addEventListener('DOMContentLoaded', () => {
             <button class="btn-primary" style="margin-top:15px;" onclick="switchSection('epp'); closeModalWindow();">Ver Infografía Completa</button>
         `,
         'modal-bioseguridad': `
-            <h2 style="color: var(--accent-green); margin-bottom: 15px;"><i class="fa-solid fa-hands-bubbles"></i> Bioseguridad</h2>
-            <p><strong>Cápsula Informativa SST:</strong> La bioseguridad es un compromiso colectivo para prevenir infecciones asociadas a la atención en salud (IAAS).</p>
-            <ul style="margin: 15px 0 20px 20px; display: flex; flex-direction: column; gap: 10px;">
-                <li>Aplica los 5 momentos de la higiene de manos de la OMS.</li>
-                <li>Mantén las áreas de trabajo limpias y desinfectadas.</li>
-                <li>Respeta la señalización de aislamiento de pacientes.</li>
-            </ul>
-            <button class="btn-primary" onclick="closeModalWindow()">Entendido</button>
+            <h2 style="color: var(--accent-green); margin-bottom: 15px;"><i class="fa-solid fa-hands-bubbles"></i> Guía Visual: Bioseguridad</h2>
+            <p><strong>¿Qué es?</strong> Conjunto de medidas para prevenir la exposición a agentes infecciosos y proteger nuestra salud y la de los demás.</p>
+            <h4 style="margin-top: 15px; color: var(--accent-green);">Los 5 momentos de la higiene de manos:</h4>
+            <ol style="margin: 10px 0 20px 20px; font-size: 0.9rem; display: flex; flex-direction: column; gap: 6px;">
+                <li>Antes de tocar al paciente.</li>
+                <li>Antes de realizar un procedimiento.</li>
+                <li>Después del contacto con el paciente.</li>
+                <li>Después de tocar su entorno.</li>
+                <li>Después de quitarse los guantes.</li>
+            </ol>
+            <button class="btn-primary" style="margin-top:15px;" onclick="switchSection('bioseguridad'); closeModalWindow();">Ver Infografía Completa</button>
         `,
         'modal-plan': `
             <h2 style="color: var(--accent-purple); margin-bottom: 15px;"><i class="fa-solid fa-clipboard-medical"></i> Plan Hospitalario de Gestión del Riesgo</h2>
