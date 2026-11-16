@@ -47,14 +47,17 @@ document.addEventListener('DOMContentLoaded', () => {
             <button class="btn-primary" onclick="switchSection('riesgo-biologico'); closeModalWindow();">Ver Guía Completa</button>
         `,
         'modal-epp': `
-            <h2 style="color: var(--primary-color); margin-bottom: 15px;"><i class="fa-solid fa-shield-halved"></i> Elementos de Protección Personal (EPP)</h2>
-            <p><strong>Cápsula Informativa SST:</strong> Los EPP son tu primera línea de defensa contra riesgos laborales. Deben usarse de manera correcta y según el protocolo de cada área.</p>
-            <ul style="margin: 15px 0 20px 20px; display: flex; flex-direction: column; gap: 10px;">
-                <li>Verifica el estado de tus EPP antes de iniciar la jornada.</li>
-                <li>Realiza la disposición final de EPP descartables en el contenedor correspondiente.</li>
-                <li>Solicita reposición oportuna ante cualquier deterioro.</li>
+            <h2 style="color: var(--primary-color); margin-bottom: 15px;"><i class="fa-solid fa-shield-halved"></i> Guía Visual: EPP</h2>
+            <p><strong>¿Qué son?</strong> Elementos que protegen contra riesgos biológicos y otros peligros laborales.</p>
+            <h4 style="margin-top: 15px; color: var(--accent-green);">¿Para qué sirven?</h4>
+            <ul style="margin: 10px 0 20px 20px; font-size: 0.9rem; display: flex; flex-direction: column; gap: 6px;">
+                <li>Prevenir contagio de infecciones.</li>
+                <li>Evitar accidentes y lesiones.</li>
+                <li>Cuidar tu salud y la de los demás.</li>
             </ul>
-            <button class="btn-primary" onclick="closeModalWindow()">Entendido</button>
+            <h4 style="margin-top: 15px; color: var(--accent-orange);"><i class="fa-solid fa-list-check"></i> Pasos para el uso correcto:</h4>
+            <p style="font-size: 0.9rem;">Seleccionar, colocar, usar, retirar y lavar manos.</p>
+            <button class="btn-primary" style="margin-top:15px;" onclick="switchSection('epp'); closeModalWindow();">Ver Infografía Completa</button>
         `,
         'modal-bioseguridad': `
             <h2 style="color: var(--accent-green); margin-bottom: 15px;"><i class="fa-solid fa-hands-bubbles"></i> Bioseguridad</h2>
