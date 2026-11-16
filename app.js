@@ -73,14 +73,15 @@ document.addEventListener('DOMContentLoaded', () => {
             <button class="btn-primary" style="margin-top:15px;" onclick="switchSection('bioseguridad'); closeModalWindow();">Ver Infografía Completa</button>
         `,
         'modal-plan': `
-            <h2 style="color: var(--accent-purple); margin-bottom: 15px;"><i class="fa-solid fa-clipboard-medical"></i> Plan Hospitalario de Gestión del Riesgo</h2>
-            <p><strong>Cápsula Informativa SST:</strong> Estar preparados nos permite responder eficazmente ante situaciones de emergencia y desastres.</p>
-            <ul style="margin: 15px 0 20px 20px; display: flex; flex-direction: column; gap: 10px;">
-                <li>Conoce las rutas de evacuación de tu servicio.</li>
-                <li>Identifica los extintores y puntos de encuentro.</li>
-                <li>Participa activamente en los simulacros institucionales.</li>
+            <h2 style="color: var(--accent-purple); margin-bottom: 15px;"><i class="fa-solid fa-clipboard-medical"></i> Guía Visual: Plan Hospitalario (PHGR)</h2>
+            <p><strong>Preparación ante emergencias:</strong> Conoce la ubicación de los extintores, la cadena de llamadas interna y las rutas de evacuación.</p>
+            <h4 style="margin-top: 15px; color: var(--accent-purple);">Regla de Oro en Sismo:</h4>
+            <p style="font-size: 0.95rem; font-weight: 600;">Me Agacho, Me Cubro, Me Agarro.</p>
+            <ul style="margin: 10px 0 20px 20px; font-size: 0.9rem; display: flex; flex-direction: column; gap: 6px;">
+                <li>Sigue las señales verdes y no uses ascensores.</li>
+                <li>Dirígete al Punto de Encuentro Institucional.</li>
             </ul>
-            <button class="btn-primary" onclick="closeModalWindow()">Entendido</button>
+            <button class="btn-primary" style="margin-top:15px;" onclick="switchSection('plan-hospitalario'); closeModalWindow();">Ver Infografía Completa</button>
         `,
         'modal-pve': `
             <h2 style="color: var(--accent-cyan); margin-bottom: 15px;"><i class="fa-solid fa-wave-square"></i> PVE Vigilancia Epidemiológica</h2>

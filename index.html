@@ -502,22 +502,67 @@
             <div class="section-banner purple-bg">
                 <i class="fa-solid fa-clipboard-medical"></i>
                 <h2>Plan Hospitalario de Gestión del Riesgo (PHGR)</h2>
-                <p>Preparados ante emergencias y desastres</p>
+                <p>Identifica, previene y cuídate ante emergencias y desastres</p>
             </div>
             <div class="detail-content">
-                <h3>Estrategias de Respuesta Institucional</h3>
-                <p>El PHGR de la Institución establece los protocolos de actuación ante sismos, incendios, fugas de materiales peligrosos y emergencias masivas.</p>
-                <div class="tips-grid">
+                <!-- Infographic Image Preview Card with Logo Cover -->
+                <div style="text-align: center; margin-bottom: 35px; background: #F8FAFC; padding: 20px; border-radius: var(--border-radius); border: 1px solid #E2E8F0; position: relative; overflow: hidden;">
+                    <div style="position: relative; display: inline-block; max-width: 800px; width: 100%;">
+                        <img src="assets/phgr-infografia.jpeg" alt="Infografía Plan Hospitalario de Gestión del Riesgo (PHGR)" style="width: 100%; border-radius: 8px; box-shadow: var(--shadow);">
+                        <!-- Overlay to hide Hospital logo -->
+                        <div style="position: absolute; top: 0; left: 0; width: 25%; height: 12%; background: #ffffff; border-radius: 8px 0 20px 0; display: flex; align-items: center; justify-content: center; font-weight: bold; color: var(--primary-color); font-size: 0.8rem; border-right: 2px solid #E2E8F0; border-bottom: 2px solid #E2E8F0;">
+                            <i class="fa-solid fa-shield-heart" style="margin-right: 5px;"></i> SST General
+                        </div>
+                    </div>
+                </div>
+
+                <div class="guide-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin-bottom: 30px;">
                     <div class="tip-card">
-                        <i class="fa-solid fa-person-walking-arrow-right"></i>
-                        <h4>Rutas de Evacuación</h4>
-                        <p>Identifique las salidas de emergencia y puntos de encuentro de su área.</p>
+                        <i class="fa-solid fa-fire-extinguisher" style="color: #DC2626;"></i>
+                        <h4>Extintores del Hospital</h4>
+                        <p style="margin-bottom: 10px;">En caso de emergencia, recuerda que los extintores se encuentran instalados en puntos estratégicos del hospital para una respuesta oportuna. ¡Identifica el más cercano!</p>
+                        <ul style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; font-size: 0.85rem; font-weight: 600;">
+                            <li style="background: #FEF9C3; color: #854D0E; padding: 4px 10px; border-radius: 12px;">Extintor Amarillo</li>
+                            <li style="background: #FEE2E2; color: #991B1B; padding: 4px 10px; border-radius: 12px;">Extintor Rojo</li>
+                            <li style="background: #FEF3C7; color: #92400E; padding: 4px 10px; border-radius: 12px;">Extintor Dorado</li>
+                            <li style="background: #F1F5F9; color: #334155; padding: 4px 10px; border-radius: 12px;">Extintor Plateado</li>
+                            <li style="background: #F8FAFC; color: #1E293B; padding: 4px 10px; border-radius: 12px; border: 1px solid #CBD5E1;">Extintor Blanco</li>
+                        </ul>
                     </div>
                     <div class="tip-card">
-                        <i class="fa-solid fa-fire-extinguisher"></i>
-                        <h4>Brigadas de Emergencia</h4>
-                        <p>Conozca a los brigadistas asignados en su piso o servicio.</p>
+                        <i class="fa-solid fa-phone-volume" style="color: var(--primary-color);"></i>
+                        <h4>Cadena de Llamadas Interna de Emergencia</h4>
+                        <ol style="padding-left: 20px; margin-top: 10px; display: flex; flex-direction: column; gap: 6px; font-size: 0.9rem;">
+                            <li><strong>Detecta y reporta</strong> la situación de emergencia.</li>
+                            <li><strong>Central de comunicaciones</strong> recibe y coordina el aviso.</li>
+                            <li><strong>Alerta a brigadas y directivos</strong> institucionales.</li>
+                            <li><strong>Activación de respuesta</strong> oportuna en el área.</li>
+                        </ol>
                     </div>
+                </div>
+
+                <div class="tips-grid" style="margin-bottom: 30px;">
+                    <div class="tip-card" style="background: #F5F3FF; border-color: #DDD6FE;">
+                        <i class="fa-solid fa-house-crack" style="color: var(--accent-purple);"></i>
+                        <h4 style="color: var(--accent-purple);">¿Qué hacer en caso de Sismo?</h4>
+                        <p style="font-weight: 600; margin-top: 8px;">La Regla de Oro durante un Sismo:</p>
+                        <p style="font-size: 1rem; font-weight: 700; color: var(--accent-purple); margin-top: 6px;">Me Agacho, Me Cubro, Me Agarro.</p>
+                    </div>
+                    <div class="tip-card" style="background: #ECFDF5; border-color: #A7F3D0;">
+                        <i class="fa-solid fa-person-walking-arrow-right" style="color: var(--accent-green);"></i>
+                        <h4 style="color: var(--accent-green);">Rutas de Evacuación y Punto de Encuentro</h4>
+                        <ul style="list-style: none; padding: 0; margin-top: 10px; display: flex; flex-direction: column; gap: 6px;">
+                            <li><i class="fa-solid fa-circle-check" style="color: var(--accent-green);"></i> Sigue las señales verdes.</li>
+                            <li><i class="fa-solid fa-circle-check" style="color: var(--accent-green);"></i> Conserva la calma.</li>
+                            <li><i class="fa-solid fa-circle-check" style="color: var(--accent-green);"></i> No uses ascensores.</li>
+                            <li><i class="fa-solid fa-circle-check" style="color: var(--accent-green);"></i> Dirígete al Punto de Encuentro Institucional.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="exposure-protocol" style="background: #FFFBEB; border: 2px solid #F59E0B; padding: 25px; border-radius: var(--border-radius);">
+                    <h3 style="color: #D97706; margin-bottom: 12px;"><i class="fa-solid fa-triangle-exclamation"></i> Recuerda:</h3>
+                    <p style="font-weight: 500; margin: 0;">Identifica, previene y cuídate. <strong>¡Prevenir es responsabilidad de todos!</strong></p>
                 </div>
             </div>
         </section>
