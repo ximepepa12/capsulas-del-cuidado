@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cápsulas del Cuidado - Hospital Santa Sofía</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Top Header & Navigation -->
+    <header class="header">
+        <div class="top-bar container">
+            <div class="logo-area">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-hospital"></i>
+                </div>
+                <div class="logo-text">
+                    <h1>Hospital Santa Sofía</h1>
+                    <p>Salud y bienestar para todos</p>
+                </div>
+            </div>
+            <div class="header-slogan">
+                <span>Tu seguridad también depende de ti</span>
+                <i class="fa-solid fa-heart-pulse"></i>
+            </div>
+        </div>
+
+        <!-- Navigation Menu -->
+        <nav class="nav-bar">
+            <div class="container nav-container">
+                <button class="nav-item active" data-target="inicio">
+                    <i class="fa-solid fa-house"></i> Inicio
+                </button>
+                <button class="nav-item" data-target="riesgo-biologico">
+                    <i class="fa-solid fa-biohazard"></i> Riesgo Biológico
+                </button>
+                <button class="nav-item" data-target="epp">
+                    <i class="fa-solid fa-shield-halved"></i> EPP
+                </button>
+                <button class="nav-item" data-target="bioseguridad">
+                    <i class="fa-solid fa-hands-bubbles"></i> Bioseguridad
+                </button>
+                <button class="nav-item" data-target="plan-hospitalario">
+                    <i class="fa-solid fa-clipboard-medical"></i> Plan Hospitalario
+                </button>
+                <button class="nav-item" data-target="pve">
+                    <i class="fa-solid fa-wave-square"></i> PVE
+                </button>
+                <button class="nav-item" data-target="pausas-activas">
+                    <i class="fa-solid fa-person-running"></i> Pausas Activas
+                </button>
+                <button class="nav-item" data-target="encuestas">
+                    <i class="fa-solid fa-square-poll-vertical"></i> Encuestas
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="main-content container">
+
+        <!-- SECTION: INICIO (HERO & CARDS) -->
+        <section id="inicio" class="content-section active">
+            <!-- Hero Banner -->
+            <div class="hero-banner">
+                <div class="hero-text">
+                    <h2>Pequeñas acciones, grandes cambios</h2>
+                    <p>en tu seguridad y salud laboral</p>
+                    <button class="btn-primary" onclick="scrollToSection('capsulas-grid')">
+                        Explorar Cápsulas <i class="fa-solid fa-arrow-down"></i>
+                    </button>
+                </div>
+                <div class="hero-image">
+                    <div class="shield-badge">
+                        <i class="fa-solid fa-shield-heart"></i>
+                        <span>SST Santa Sofía</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Grid of Capsules -->
+            <div id="capsulas-grid" class="capsules-grid">
+                <!-- Card 1: Riesgo Biológico -->
+                <div class="capsule-card" data-modal="modal-riesgo-biologico">
+                    <div class="card-icon red">
+                        <i class="fa-solid fa-biohazard"></i>
+                    </div>
+                    <h3>Riesgo Biológico</h3>
+                    <p>Conoce los riesgos y cómo prevenirlos en el entorno hospitalario.</p>
+                    <button class="btn-link">Ver más <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+
+                <!-- Card 2: EPP -->
+                <div class="capsule-card" data-modal="modal-epp">
+                    <div class="card-icon blue">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3>Elementos de Protección Personal</h3>
+                    <p>Usa correctamente tus EPP para garantizar tu bienestar.</p>
+                    <button class="btn-link">Ver más <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+
+                <!-- Card 3: Bioseguridad -->
+                <div class="capsule-card" data-modal="modal-bioseguridad">
+                    <div class="card-icon green">
+                        <i class="fa-solid fa-hands-bubbles"></i>
+                    </div>
+                    <h3>Bioseguridad</h3>
+                    <p>Hábitos seguros para todos y control de infecciones.</p>
+                    <button class="btn-link">Ver más <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+
+                <!-- Card 4: Plan Hospitalario -->
+                <div class="capsule-card" data-modal="modal-plan">
+                    <div class="card-icon purple">
+                        <i class="fa-solid fa-clipboard-medical"></i>
+                    </div>
+                    <h3>Plan Hospitalario de Gestión del Riesgo</h3>
+                    <p>Conoce el plan, emergencias y sus estrategias.</p>
+                    <button class="btn-link">Ver más <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+
+                <!-- Card 5: PVE -->
+                <div class="capsule-card" data-modal="modal-pve">
+                    <div class="card-icon cyan">
+                        <i class="fa-solid fa-wave-square"></i>
+                    </div>
+                    <h3>PVE Vigilancia Epidemiológica</h3>
+                    <p>Infórmate y participa en los programas de vigilancia.</p>
+                    <button class="btn-link">Ver más <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+
+                <!-- Card 6: Pausas Activas -->
+                <div class="capsule-card" data-modal="modal-pausas">
+                    <div class="card-icon orange">
+                        <i class="fa-solid fa-person-running"></i>
+                    </div>
+                    <h3>Pausas Activas</h3>
+                    <p>Cuida tu cuerpo y relájate en la jornada laboral.</p>
+                    <button class="btn-link">Ver más <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+
+            <!-- Bottom Interactive Section -->
+            <div class="bottom-sections-grid">
+                <!-- Participa y Aprende -->
+                <div class="panel-box">
+                    <div class="panel-header">
+                        <i class="fa-solid fa-bullhorn"></i>
+                        <h3>Participa y Aprende</h3>
+                    </div>
+                    <ul class="panel-list">
+                        <li onclick="switchSection('encuestas')">
+                            <span><i class="fa-solid fa-file-lines"></i> Encuesta de Conocimientos</span>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </li>
+                        <li onclick="switchSection('encuestas')">
+                            <span><i class="fa-solid fa-trophy"></i> Evaluación de Aprendizaje</span>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </li>
+                        <li onclick="switchSection('encuestas')">
+                            <span><i class="fa-solid fa-face-smile"></i> Encuesta de Satisfacción</span>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- QR / Access Simulation -->
+                <div class="panel-box qr-box">
+                    <div class="panel-header">
+                        <i class="fa-solid fa-qrcode"></i>
+                        <h3>Acceso Móvil Interactivo</h3>
+                    </div>
+                    <div class="qr-content">
+                        <div class="qr-code-placeholder">
+                            <i class="fa-solid fa-qrcode"></i>
+                        </div>
+                        <div>
+                            <p>Escanea o haz clic para acceder desde cualquier dispositivo móvil.</p>
+                            <span class="qr-slogan">¡Aprende, participa y cuídate!</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tu Salud es lo más Importante (Checklist) -->
+                <div class="panel-box checklist-box">
+                    <div class="panel-header">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                        <h3>Tu Salud es lo más Importante</h3>
+                    </div>
+                    <ul class="checklist" id="daily-checklist">
+                        <li>
+                            <label><input type="checkbox" data-id="1"> Usa siempre los EPP adecuados.</label>
+                        </li>
+                        <li>
+                            <label><input type="checkbox" data-id="2"> Mantén la higiene frecuente de manos.</label>
+                        </li>
+                        <li>
+                            <label><input type="checkbox" data-id="3"> Sigue los protocolos de seguridad y bioseguridad.</label>
+                        </li>
+                        <li>
+                            <label><input type="checkbox" data-id="4"> Cuida tu salud física y la de tu familia.</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTIONS FOR DIRECT TAB NAVIGATION -->
+        <section id="riesgo-biologico" class="content-section">
+            <div class="section-banner red-bg">
+                <i class="fa-solid fa-biohazard"></i>
+                <h2>Riesgo Biológico</h2>
+                <p>Identificación, prevención y manejo de agentes infecciosos</p>
+            </div>
+            <div class="detail-content">
+                <h3>¿Qué es el Riesgo Biológico?</h3>
+                <p>La exposición laboral a agentes biológicos (virus, bacterias, hongos, parásitos) presentes en fluidos corporales, sangre y tejidos de pacientes.</p>
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <i class="fa-solid fa-syringe"></i>
+                        <h4>Manejo de Cortopunzantes</h4>
+                        <p>Nunca reencapuche agujas. Deseche inmediatamente en el contenedor rojo rígido correspondiente.</p>
+                    </div>
+                    <div class="tip-card">
+                        <i class="fa-solid fa-hand-holding-droplet"></i>
+                        <h4>Lavado de Manos</h4>
+                        <p>Realice la higiene de manos antes y después de cada procedimiento clínico.</p>
+                    </div>
+                    <div class="tip-card">
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                        <h4>Reporte de Accidentes</h4>
+                        <p>Ante cualquier pinchazo o salpicadura, informe de inmediato al servicio de SST y Salud Ocupacional.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="epp" class="content-section">
+            <div class="section-banner blue-bg">
+                <i class="fa-solid fa-shield-halved"></i>
+                <h2>Elementos de Protección Personal (EPP)</h2>
+                <p>Tu escudo protector en la labor diaria asistencial y administrativa</p>
+            </div>
+            <div class="detail-content">
+                <h3>Uso Correcto de EPP</h3>
+                <p>Los EPP son barreras físicas diseñadas para proteger al trabajador de riesgos biológicos, químicos y físicos.</p>
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <i class="fa-solid fa-mask"></i>
+                        <h4>Protección Respiratoria</h4>
+                        <p>Uso obligatorio de mascarilla quirúrgica o respirador N95 según el área de atención.</p>
+                    </div>
+                    <div class="tip-card">
+                        <i class="fa-solid fa-glasses"></i>
+                        <h4>Protección Ocular</h4>
+                        <p>Gafas de seguridad o careta facial en procedimientos con riesgo de salpicaduras.</p>
+                    </div>
+                    <div class="tip-card">
+                        <i class="fa-solid fa-user-shield"></i>
+                        <h4>Batas y Guantes</h4>
+                        <p>Uso de bata antifluidos y guantes descartables en aislamiento y procedimientos estériles.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="bioseguridad" class="content-section">
+            <div class="section-banner green-bg">
+                <i class="fa-solid fa-hands-bubbles"></i>
+                <h2>Bioseguridad</h2>
+                <p>Prácticas y normas preventivas para el control de infecciones</p>
+            </div>
+            <div class="detail-content">
+                <h3>Pilares de la Bioseguridad</h3>
+                <ul class="styled-list">
+                    <li><strong>Universalidad:</strong> Asumir que toda persona o fluido puede portar agentes infecciosos.</li>
+                    <li><strong>Uso de Barreras:</strong> Empleo correcto de EPP para evitar contacto directo.</li>
+                    <li><strong>Eliminación de Materiales:</strong> Clasificación y disposición adecuada de residuos hospitalarios (Verdes, Rojos, Guardianes).</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="plan-hospitalario" class="content-section">
+            <div class="section-banner purple-bg">
+                <i class="fa-solid fa-clipboard-medical"></i>
+                <h2>Plan Hospitalario de Gestión del Riesgo (PHGR)</h2>
+                <p>Preparados ante emergencias y desastres</p>
+            </div>
+            <div class="detail-content">
+                <h3>Estrategias de Respuesta Institucional</h3>
+                <p>El PHGR del Hospital Santa Sofía establece los protocolos de actuación ante sismos, incendios, fugas de materiales peligrosos y emergencias masivas.</p>
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <i class="fa-solid fa-person-walking-arrow-right"></i>
+                        <h4>Rutas de Evacuación</h4>
+                        <p>Identifique las salidas de emergencia y puntos de encuentro de su área.</p>
+                    </div>
+                    <div class="tip-card">
+                        <i class="fa-solid fa-fire-extinguisher"></i>
+                        <h4>Brigadas de Emergencia</h4>
+                        <p>Conozca a los brigadistas asignados en su piso o servicio.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pve" class="content-section">
+            <div class="section-banner cyan-bg">
+                <i class="fa-solid fa-wave-square"></i>
+                <h2>PVE Vigilancia Epidemiológica</h2>
+                <p>Monitoreo y prevención de condiciones de salud</p>
+            </div>
+            <div class="detail-content">
+                <h3>Programas de Vigilancia Ocupacional</h3>
+                <p>El Hospital Santa Sofía gestiona activamente programas de prevención en:</p>
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <i class="fa-solid fa-user-doctor"></i>
+                        <h4>Riesgo Biomecánico</h4>
+                        <p>Prevención de lesiones musculoesqueléticas y manipulación segura de cargas/pacientes.</p>
+                    </div>
+                    <div class="tip-card">
+                        <i class="fa-solid fa-brain"></i>
+                        <h4>Riesgo Psicosocial</h4>
+                        <p>Promoción de la salud mental, manejo del estrés y bienestar laboral.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pausas-activas" class="content-section">
+            <div class="section-banner orange-bg">
+                <i class="fa-solid fa-person-running"></i>
+                <h2>Pausas Activas Interactivas</h2>
+                <p>Recarga tu energía y cuida tu cuerpo durante la jornada</p>
+            </div>
+            <div class="detail-content text-center">
+                <h3>Temporizador de Pausa Activa</h3>
+                <p>Dedica 3 minutos para estirar tu cuerpo, relajar la vista y liberar tensión.</p>
+                
+                <div class="timer-card">
+                    <div id="timer-display" class="timer-display">03:00</div>
+                    <div class="timer-controls">
+                        <button id="start-timer" class="btn-success"><i class="fa-solid fa-play"></i> Iniciar Pausa</button>
+                        <button id="pause-timer" class="btn-warning"><i class="fa-solid fa-pause"></i> Pausar</button>
+                        <button id="reset-timer" class="btn-secondary"><i class="fa-solid fa-rotate-right"></i> Reiniciar</button>
+                    </div>
+                </div>
+
+                <div class="exercises-guide">
+                    <h4>Ejercicios recomendados:</h4>
+                    <div class="exercise-steps">
+                        <div class="step">1. Movimiento de cuello suave (lados y círculos).</div>
+                        <div class="step">2. Estiramiento de brazos y hombros hacia atrás.</div>
+                        <div class="step">3. Flexión y extensión de muñecas (ideal para digitación).</div>
+                        <div class="step">4. Descanso visual: mirar a lo lejos por 20 segundos.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="encuestas" class="content-section">
+            <div class="section-banner indigo-bg">
+                <i class="fa-solid fa-square-poll-vertical"></i>
+                <h2>Evaluaciones y Encuestas SST</h2>
+                <p>Pon a prueba tus conocimientos y danos tu opinión</p>
+            </div>
+            <div class="surveys-container">
+                <!-- Quiz 1 -->
+                <div class="survey-card">
+                    <h3><i class="fa-solid fa-file-lines"></i> Encuesta de Conocimientos SST</h3>
+                    <form id="quiz-form">
+                        <div class="question-item">
+                            <p>1. ¿Qué se debe hacer con una aguja usada después de un procedimiento?</p>
+                            <label><input type="radio" name="q1" value="a"> A) Reencapucharla cuidadosamente.</label>
+                            <label><input type="radio" name="q1" value="b"> B) Desecharla inmediatamente en el guardián rojo sin reencapuchar.</label>
+                            <label><input type="radio" name="q1" value="c"> C) Dejarla en la mesa de trabajo.</label>
+                        </div>
+                        <div class="question-item">
+                            <p>2. ¿Cuál es el principal objetivo del uso de EPP?</p>
+                            <label><input type="radio" name="q2" value="a"> A) Cumplir por cumplir.</label>
+                            <label><input type="radio" name="q2" value="b"> B) Proteger al trabajador como barrera contra riesgos laborales.</label>
+                            <label><input type="radio" name="q2" value="c"> C) Mejorar la apariencia personal.</label>
+                        </div>
+                        <button type="submit" class="btn-primary">Calificar Cuestionario</button>
+                    </form>
+                    <div id="quiz-result" class="quiz-result hidden"></div>
+                </div>
+
+                <!-- Satisfaction Survey -->
+                <div class="survey-card">
+                    <h3><i class="fa-solid fa-face-smile"></i> Encuesta de Satisfacción</h3>
+                    <form id="satisfaction-form">
+                        <p>¿Qué tan útil te parecieron las Cápsulas del Cuidado?</p>
+                        <div class="rating-stars">
+                            <i class="fa-solid fa-star" data-rating="1"></i>
+                            <i class="fa-solid fa-star" data-rating="2"></i>
+                            <i class="fa-solid fa-star" data-rating="3"></i>
+                            <i class="fa-solid fa-star" data-rating="4"></i>
+                            <i class="fa-solid fa-star" data-rating="5"></i>
+                        </div>
+                        <input type="hidden" id="selected-rating" value="5">
+                        <textarea placeholder="Déjanos tus comentarios o sugerencias..." rows="3"></textarea>
+                        <button type="submit" class="btn-primary">Enviar Opinión</button>
+                    </form>
+                    <div id="satisfaction-result" class="quiz-result hidden">¡Gracias por tu opinión! Tu retroalimentación nos ayuda a mejorar.</div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- MODALS FOR CAPSULES -->
+    <div id="modal-container" class="modal-container hidden">
+        <div class="modal-content">
+            <button class="modal-close" id="close-modal"><i class="fa-solid fa-xmark"></i></button>
+            <div id="modal-body">
+                <!-- Dynamic Modal Content -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Hospital Santa Sofía - Área de Seguridad y Salud en el Trabajo (SST). Todos los derechos reservados.</p>
+            <p class="footer-slogan">"Aprender para prevenir, cuidarnos para trabajar mejor"</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
