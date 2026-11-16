@@ -689,3 +689,49 @@ textarea {
         grid-template-columns: 1fr;
     }
 }
+
+/* Custom Animations & Interactive Visuals */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+@keyframes pulseGlow {
+    0% { box-shadow: 0 0 0 0 rgba(0, 71, 171, 0.4); }
+    70% { box-shadow: 0 0 0 15px rgba(0, 71, 171, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(0, 71, 171, 0); }
+}
+
+@keyframes heartbeat {
+    0% { transform: scale(1); }
+    14% { transform: scale(1.15); }
+    28% { transform: scale(1); }
+    42% { transform: scale(1.15); }
+    70% { transform: scale(1); }
+}
+
+.animated-float {
+    animation: float 3.5s ease-in-out infinite;
+}
+
+.animated-heart {
+    animation: heartbeat 2s infinite;
+}
+
+.section-banner i {
+    animation: float 3s ease-in-out infinite;
+}
+
+.card-icon {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.capsule-card:hover .card-icon {
+    transform: scale(1.15) rotate(5deg);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.hero-image {
+    animation: float 4s ease-in-out infinite;
+}
