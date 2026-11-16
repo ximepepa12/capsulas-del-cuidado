@@ -16,8 +16,14 @@
     <header class="header">
         <div class="top-bar container">
             <div class="logo-area">
-                <div class="logo-icon animated-float" style="background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));">
-                    <i class="fa-solid fa-hospital-user"></i>
+                <div class="logo-icon animated-float" style="background: #ffffff; padding: 5px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border-radius: 50%;">
+                    <!-- Custom Healthcare SVG Illustration -->
+                    <svg width="40" height="40" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="32" cy="32" r="30" fill="#0047AB"/>
+                        <path d="M32 16C26.48 16 22 20.48 22 26C22 31.52 26.48 36 32 36C37.52 36 42 31.52 42 26C42 20.48 37.52 16 32 16ZM32 33C28.14 33 25 29.86 25 26C25 22.14 28.14 19 32 19C35.86 19 39 22.14 39 26C39 29.86 35.86 33 32 33Z" fill="white"/>
+                        <path d="M46 47C46 41.48 40.52 38 32 38C23.48 38 18 41.48 18 47V49H46V47Z" fill="white"/>
+                        <rect x="29" y="8" width="6" height="8" rx="3" fill="#00A3E0"/>
+                    </svg>
                 </div>
                 <div class="logo-text">
                     <h1>Cápsulas del Cuidado</h1>
@@ -76,9 +82,14 @@
                     </button>
                 </div>
                 <div class="hero-image">
-                    <div class="shield-badge">
-                        <i class="fa-solid fa-notes-medical animated-heart" style="font-size: 2.8rem; color: #FFD700; text-shadow: 0 2px 4px rgba(0,0,0,0.2);"></i>
-                        <span style="font-weight: 600; font-size: 1.1rem; letter-spacing: 0.5px;">SST Institucional</span>
+                    <div class="shield-badge" style="display: flex; flex-direction: column; align-items: center; gap: 8px;">
+                        <!-- Custom Safety Shield SVG Illustration -->
+                        <svg class="animated-heart" width="70" height="70" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M32 4L8 14V28C8 42 18 54 32 60C46 54 56 42 56 28V14L32 4Z" fill="#0047AB" stroke="#00A3E0" stroke-width="3"/>
+                            <path d="M32 16V44M18 30H46" stroke="white" stroke-width="5" stroke-linecap="round"/>
+                            <path d="M22 38L27 34L32 42L38 30L42 36" stroke="#FFD700" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span style="font-weight: 600; font-size: 1.1rem; letter-spacing: 0.5px; color: white;">SST Institucional</span>
                     </div>
                 </div>
             </div>
