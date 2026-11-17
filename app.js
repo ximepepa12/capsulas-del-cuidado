@@ -94,13 +94,13 @@ document.addEventListener('DOMContentLoaded', () => {
             <button class="btn-primary" style="margin-top:15px;" onclick="switchSection('pve'); closeModalWindow();">Ver Infografía Completa</button>
         `,
         'modal-pausas': `
-            <h2 style="color: var(--accent-orange); margin-bottom: 15px;"><i class="fa-solid fa-person-running"></i> Pausas Activas</h2>
-            <p><strong>Cápsula Informativa SST:</strong> Dedicar unos minutos al día para estirar y relajar los músculos previene lesiones y mejora la concentración.</p>
+            <h2 style="color: var(--accent-orange); margin-bottom: 15px;"><i class="fa-solid fa-person-running"></i> Guía Visual: Pausas Activas</h2>
+            <p><strong>¿Qué son?</strong> Breves descansos durante la jornada laboral que ayudan a recuperar energía, prevenir la fatiga y reducir el estrés y lesiones osteomusculares, con el apoyo de nuestras <strong>ARL</strong> en el hospital.</p>
             <ul style="margin: 15px 0 20px 20px; display: flex; flex-direction: column; gap: 10px;">
-                <li>Realiza estiramientos de cuello, hombros y manos cada 2 horas.</li>
-                <li>Cambia de postura si permaneces mucho tiempo de pie o sentado.</li>
+                <li>Dedica de 5 a 10 minutos, al menos 2 veces al día.</li>
+                <li>Realiza movimientos suaves de cuello, manos, espalda, piernas y ojos.</li>
             </ul>
-            <button class="btn-primary" onclick="switchSection('pausas-activas'); closeModalWindow();">Ir al Temporizador</button>
+            <button class="btn-primary" onclick="switchSection('pausas-activas'); closeModalWindow();">Ver Infografía y Temporizador</button>
         `
     };
 

@@ -648,29 +648,95 @@
         <section id="pausas-activas" class="content-section">
             <div class="section-banner orange-bg">
                 <i class="fa-solid fa-person-running"></i>
-                <h2>Pausas Activas Interactivas</h2>
-                <p>Recarga tu energía y cuida tu cuerpo durante la jornada</p>
+                <h2>Pausas Activas Laborales</h2>
+                <p>Pequeños descansos para un gran bienestar</p>
             </div>
-            <div class="detail-content text-center">
-                <h3>Temporizador de Pausa Activa</h3>
-                <p>Dedica 3 minutos para estirar tu cuerpo, relajar la vista y liberar tensión.</p>
-                
-                <div class="timer-card">
-                    <div id="timer-display" class="timer-display">03:00</div>
-                    <div class="timer-controls">
-                        <button id="start-timer" class="btn-success"><i class="fa-solid fa-play"></i> Iniciar Pausa</button>
-                        <button id="pause-timer" class="btn-warning"><i class="fa-solid fa-pause"></i> Pausar</button>
-                        <button id="reset-timer" class="btn-secondary"><i class="fa-solid fa-rotate-right"></i> Reiniciar</button>
+            <div class="detail-content">
+                <!-- Infographic Image Preview Card with Logo Cover -->
+                <div style="text-align: center; margin-bottom: 35px; background: #F8FAFC; padding: 20px; border-radius: var(--border-radius); border: 1px solid #E2E8F0; position: relative; overflow: hidden;">
+                    <div style="position: relative; display: inline-block; max-width: 800px; width: 100%;">
+                        <img src="assets/pausas-activas-infografia.jpeg" alt="Infografía Pausas Activas Laborales" style="width: 100%; border-radius: 8px; box-shadow: var(--shadow);">
+                        <!-- Overlay to hide Hospital logo -->
+                        <div style="position: absolute; top: 0; left: 0; width: 25%; height: 12%; background: #ffffff; border-radius: 8px 0 20px 0; display: flex; align-items: center; justify-content: center; font-weight: bold; color: var(--primary-color); font-size: 0.8rem; border-right: 2px solid #E2E8F0; border-bottom: 2px solid #E2E8F0;">
+                            <i class="fa-solid fa-shield-heart" style="margin-right: 5px;"></i> SST General
+                        </div>
                     </div>
                 </div>
 
-                <div class="exercises-guide">
-                    <h4>Ejercicios recomendados:</h4>
-                    <div class="exercise-steps">
-                        <div class="step">1. Movimiento de cuello suave (lados y círculos).</div>
-                        <div class="step">2. Estiramiento de brazos y hombros hacia atrás.</div>
-                        <div class="step">3. Flexión y extensión de muñecas (ideal para digitación).</div>
-                        <div class="step">4. Descanso visual: mirar a lo lejos por 20 segundos.</div>
+                <div class="guide-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin-bottom: 30px;">
+                    <div class="tip-card">
+                        <i class="fa-solid fa-lightbulb" style="color: #F59E0B;"></i>
+                        <h4>¿Qué son las Pausas Activas?</h4>
+                        <p>Son breves descansos durante la jornada laboral que nos ayudan a recuperar la energía, prevenir la fatiga física y mental, y reducir los trastornos osteomusculares y el estrés.</p>
+                        <p style="margin-top: 10px; font-size: 0.9rem; color: var(--primary-color); font-weight: 500;"><i class="fa-solid fa-handshake-angle"></i> En el hospital contamos con el apoyo y acompañamiento de las <strong>ARL</strong> para guiar y fortalecer estas jornadas en todos los servicios.</p>
+                    </div>
+                    <div class="tip-card">
+                        <i class="fa-solid fa-circle-check" style="color: var(--accent-green);"></i>
+                        <h4>¿Cómo realizar las Pausas Activas?</h4>
+                        <ul style="list-style: none; padding: 0; margin-top: 10px; display: flex; flex-direction: column; gap: 6px;">
+                            <li><i class="fa-solid fa-check" style="color: var(--accent-green);"></i> Dedica de 5 a 10 minutos en tu jornada.</li>
+                            <li><i class="fa-solid fa-check" style="color: var(--accent-green);"></i> Hazlas al menos 2 veces al día.</li>
+                            <li><i class="fa-solid fa-check" style="color: var(--accent-green);"></i> Realiza movimientos suaves y lentos.</li>
+                            <li><i class="fa-solid fa-check" style="color: var(--accent-green);"></i> No deben producir dolor ni fatiga.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h3 style="margin-top: 30px; color: var(--accent-orange);"><i class="fa-solid fa-dumbbell"></i> Beneficios y Ejercicios</h3>
+                <div class="tips-grid" style="margin-bottom: 30px;">
+                    <div class="tip-card">
+                        <i class="fa-solid fa-head-side-virus" style="color: var(--primary-color);"></i>
+                        <h4>1. Cuello y Hombros</h4>
+                        <p>Movimientos suaves de lado a lado y círculos de hombros.</p>
+                    </div>
+                    <div class="tip-card">
+                        <i class="fa-solid fa-hands" style="color: var(--accent-green);"></i>
+                        <h4>2. Manos y Muñecas</h4>
+                        <p>Estiramientos de dedos y movimientos circulares de muñecas.</p>
+                    </div>
+                    <div class="tip-card">
+                        <i class="fa-solid fa-child-reaching" style="color: var(--accent-cyan);"></i>
+                        <h4>3. Espalda y Tronco</h4>
+                        <p>Giros suaves del torso y estiramientos de espalda.</p>
+                    </div>
+                    <div class="tip-card">
+                        <i class="fa-solid fa-shoe-prints" style="color: var(--accent-orange);"></i>
+                        <h4>4. Piernas y Pies</h4>
+                        <p>Elevación de rodillas, estiramientos de piernas y tobillos.</p>
+                    </div>
+                    <div class="tip-card">
+                        <i class="fa-solid fa-eye" style="color: var(--accent-purple);"></i>
+                        <h4>5. Ojos y Mente</h4>
+                        <p>Parpadeo consciente, enfoque lejano y respiración profunda.</p>
+                    </div>
+                </div>
+
+                <div class="exposure-protocol" style="background: #FFFBEB; border: 2px solid #F59E0B; padding: 25px; border-radius: var(--border-radius); margin-bottom: 35px;">
+                    <h3 style="color: #D97706; margin-bottom: 12px;"><i class="fa-solid fa-triangle-exclamation"></i> Recuerda:</h3>
+                    <p style="font-weight: 500; margin: 0;">Realizar pausas activas previene el estrés, mejora la circulación y previene lesiones osteomusculares. <strong>¡Muévete, relájate y cuida tu salud!</strong></p>
+                </div>
+
+                <div class="text-center">
+                    <h3>Temporizador de Pausa Activa</h3>
+                    <p>Dedica 3 minutos para estirar tu cuerpo, relajar la vista y liberar tensión.</p>
+                    
+                    <div class="timer-card">
+                        <div id="timer-display" class="timer-display">03:00</div>
+                        <div class="timer-controls">
+                            <button id="start-timer" class="btn-success"><i class="fa-solid fa-play"></i> Iniciar Pausa</button>
+                            <button id="pause-timer" class="btn-warning"><i class="fa-solid fa-pause"></i> Pausar</button>
+                            <button id="reset-timer" class="btn-secondary"><i class="fa-solid fa-rotate-right"></i> Reiniciar</button>
+                        </div>
+                    </div>
+
+                    <div class="exercises-guide">
+                        <h4>Ejercicios recomendados:</h4>
+                        <div class="exercise-steps">
+                            <div class="step">1. Movimiento de cuello suave (lados y círculos).</div>
+                            <div class="step">2. Estiramiento de brazos y hombros hacia atrás.</div>
+                            <div class="step">3. Flexión y extensión de muñecas (ideal para digitación).</div>
+                            <div class="step">4. Descanso visual: mirar a lo lejos por 20 segundos.</div>
+                        </div>
                     </div>
                 </div>
             </div>
