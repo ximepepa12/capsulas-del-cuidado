@@ -749,25 +749,37 @@
                 <p>Pon a prueba tus conocimientos y danos tu opinión</p>
             </div>
             <div class="surveys-container">
-                <!-- Quiz 1 -->
+                <!-- Encuestas por Tema -->
                 <div class="survey-card">
                     <h3><i class="fa-solid fa-file-lines"></i> Encuesta de Conocimientos SST</h3>
-                    <form id="quiz-form">
-                        <div class="question-item">
-                            <p>1. ¿Qué se debe hacer con una aguja usada después de un procedimiento?</p>
-                            <label><input type="radio" name="q1" value="a"> A) Reencapucharla cuidadosamente.</label>
-                            <label><input type="radio" name="q1" value="b"> B) Desecharla inmediatamente en el guardián rojo sin reencapuchar.</label>
-                            <label><input type="radio" name="q1" value="c"> C) Dejarla en la mesa de trabajo.</label>
-                        </div>
-                        <div class="question-item">
-                            <p>2. ¿Cuál es el principal objetivo del uso de EPP?</p>
-                            <label><input type="radio" name="q2" value="a"> A) Cumplir por cumplir.</label>
-                            <label><input type="radio" name="q2" value="b"> B) Proteger al trabajador como barrera contra riesgos laborales.</label>
-                            <label><input type="radio" name="q2" value="c"> C) Mejorar la apariencia personal.</label>
-                        </div>
-                        <button type="submit" class="btn-primary">Calificar Cuestionario</button>
-                    </form>
-                    <div id="quiz-result" class="quiz-result hidden"></div>
+                    <p style="margin-bottom: 18px; color: var(--text-muted); font-size: 0.95rem;">Selecciona un tema para acceder a su encuesta de conocimientos:</p>
+                    <div class="survey-links-list" style="display: flex; flex-direction: column; gap: 12px;">
+                        <!-- Reemplaza href="#" por el enlace de tu encuesta en cada tema -->
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="survey-link-item" style="display: flex; align-items: center; justify-content: space-between; padding: 12px 16px; background: #FEF2F2; border: 1px solid #FECACA; border-radius: 10px; text-decoration: none; color: #991B1B; font-weight: 600; transition: transform 0.2s;">
+                            <span><i class="fa-solid fa-biohazard" style="margin-right: 10px;"></i> Riesgo Biológico</span>
+                            <span style="font-size: 0.85rem; background: #DC2626; color: white; padding: 4px 12px; border-radius: 20px;">Ir a Encuesta <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                        </a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="survey-link-item" style="display: flex; align-items: center; justify-content: space-between; padding: 12px 16px; background: #EFF6FF; border: 1px solid #BFDBFE; border-radius: 10px; text-decoration: none; color: #1E40AF; font-weight: 600; transition: transform 0.2s;">
+                            <span><i class="fa-solid fa-shield-halved" style="margin-right: 10px;"></i> Elementos de Protección Personal (EPP)</span>
+                            <span style="font-size: 0.85rem; background: var(--primary-color); color: white; padding: 4px 12px; border-radius: 20px;">Ir a Encuesta <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                        </a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="survey-link-item" style="display: flex; align-items: center; justify-content: space-between; padding: 12px 16px; background: #ECFDF5; border: 1px solid #A7F3D0; border-radius: 10px; text-decoration: none; color: #065F46; font-weight: 600; transition: transform 0.2s;">
+                            <span><i class="fa-solid fa-hands-bubbles" style="margin-right: 10px;"></i> Bioseguridad</span>
+                            <span style="font-size: 0.85rem; background: var(--accent-green); color: white; padding: 4px 12px; border-radius: 20px;">Ir a Encuesta <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                        </a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="survey-link-item" style="display: flex; align-items: center; justify-content: space-between; padding: 12px 16px; background: #F5F3FF; border: 1px solid #DDD6FE; border-radius: 10px; text-decoration: none; color: #5B21B6; font-weight: 600; transition: transform 0.2s;">
+                            <span><i class="fa-solid fa-clipboard-medical" style="margin-right: 10px;"></i> Plan Hospitalario de Gestión del Riesgo (PHGR)</span>
+                            <span style="font-size: 0.85rem; background: var(--accent-purple); color: white; padding: 4px 12px; border-radius: 20px;">Ir a Encuesta <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                        </a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="survey-link-item" style="display: flex; align-items: center; justify-content: space-between; padding: 12px 16px; background: #ECFEFF; border: 1px solid #A5F3FC; border-radius: 10px; text-decoration: none; color: #155E75; font-weight: 600; transition: transform 0.2s;">
+                            <span><i class="fa-solid fa-wave-square" style="margin-right: 10px;"></i> PVE Vigilancia Epidemiológica</span>
+                            <span style="font-size: 0.85rem; background: var(--accent-cyan); color: white; padding: 4px 12px; border-radius: 20px;">Ir a Encuesta <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                        </a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="survey-link-item" style="display: flex; align-items: center; justify-content: space-between; padding: 12px 16px; background: #FFF7ED; border: 1px solid #FED7AA; border-radius: 10px; text-decoration: none; color: #9A3412; font-weight: 600; transition: transform 0.2s;">
+                            <span><i class="fa-solid fa-person-running" style="margin-right: 10px;"></i> Pausas Activas</span>
+                            <span style="font-size: 0.85rem; background: var(--accent-orange); color: white; padding: 4px 12px; border-radius: 20px;">Ir a Encuesta <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                        </a>
+                    </div>
                 </div>
 
                 <!-- Satisfaction Survey -->
