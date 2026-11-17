@@ -1,11 +1,11 @@
-// Enlaces de Google Forms por cada pestaña (reemplaza '#' con la URL de cada formulario)
+// Enlaces de Google Forms por cada pestaña
 const SURVEY_LINKS = {
-    'riesgo-biologico': '#',
-    'epp': '#',
-    'bioseguridad': '#',
-    'plan-hospitalario': '#',
-    'pve': '#',
-    'pausas-activas': '#'
+    'riesgo-biologico': 'https://docs.google.com/forms/d/e/1FAIpQLSe6h27qvBjjjNGVRAzFgcaIVfWr0abxu-6MDSH2jEaBP92DOg/viewform',
+    'epp': 'https://docs.google.com/forms/d/e/1FAIpQLScOs12Ii6tCsVRWZfaH-H0WDkjwnvF-2S6sujE6gUV2iVeUkg/viewform',
+    'bioseguridad': 'https://docs.google.com/forms/d/e/1FAIpQLScWYTXkye6XtAovCQaaMfqaG1I_6E0aH7z6QkoNRTe46VunfQ/viewform',
+    'plan-hospitalario': 'https://docs.google.com/forms/d/e/1FAIpQLSdKKidxqWYgnhvvA37FlJCRMi22kkg60GzSlkpnaxabk1LU_g/viewform',
+    'pve': 'https://docs.google.com/forms/d/e/1FAIpQLScK7s2jpWSgisQykmqjTLdNtCul0ifSvIfL-c10ngS4MQQASw/viewform',
+    'pausas-activas': 'https://docs.google.com/forms/d/e/1FAIpQLSeBvujkL26qSkkrdnpmkNMCHcFozG4Z1YsjBBPIC6UROIsCeA/viewform'
 };
 
 // Navigation Handling
