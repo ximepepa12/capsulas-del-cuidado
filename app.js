@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
         `,
         'modal-plan': `
             <h2 style="color: var(--accent-purple); margin-bottom: 15px;"><i class="fa-solid fa-clipboard-medical"></i> Guía Visual: Plan Hospitalario (PHGR)</h2>
-            <p><strong>Preparación ante emergencias:</strong> Conoce la ubicación de los extintores, la cadena de llamadas interna y las rutas de evacuación.</p>
+            <p><strong>¿Qué es?</strong> Es el documento guía institucional que nos indica cómo actuar, cómo evacuar de forma segura y qué elementos utilizar en caso de una emergencia.</p>
             <h4 style="margin-top: 15px; color: var(--accent-purple);">Regla de Oro en Sismo:</h4>
             <p style="font-size: 0.95rem; font-weight: 600;">Me Agacho, Me Cubro, Me Agarro.</p>
             <ul style="margin: 10px 0 20px 20px; font-size: 0.9rem; display: flex; flex-direction: column; gap: 6px;">
