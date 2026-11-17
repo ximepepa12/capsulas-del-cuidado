@@ -84,14 +84,14 @@ document.addEventListener('DOMContentLoaded', () => {
             <button class="btn-primary" style="margin-top:15px;" onclick="switchSection('plan-hospitalario'); closeModalWindow();">Ver Infografía Completa</button>
         `,
         'modal-pve': `
-            <h2 style="color: var(--accent-cyan); margin-bottom: 15px;"><i class="fa-solid fa-wave-square"></i> PVE Vigilancia Epidemiológica</h2>
-            <p><strong>Cápsula Informativa SST:</strong> Los Programas de Vigilancia Epidemiológica monitorean y previenen afectaciones a la salud de los trabajadores.</p>
-            <ul style="margin: 15px 0 20px 20px; display: flex; flex-direction: column; gap: 10px;">
-                <li>Participa en las evaluaciones de puestos de trabajo.</li>
-                <li>Reporta síntomas osteomusculares o de estrés oportunamente.</li>
-                <li>Asiste a los exámenes médicos ocupacionales periódicos.</li>
+            <h2 style="color: var(--accent-cyan); margin-bottom: 15px;"><i class="fa-solid fa-wave-square"></i> Guía Visual: PVE Vigilancia Epidemiológica</h2>
+            <p><strong>¿Qué es?</strong> Estrategia para monitorear, prevenir y controlar los riesgos laborales, detectando a tiempo posibles enfermedades en los trabajadores de la salud.</p>
+            <h4 style="margin-top: 15px; color: var(--accent-cyan);">Programas en el Hospital:</h4>
+            <ul style="margin: 10px 0 20px 20px; font-size: 0.9rem; display: flex; flex-direction: column; gap: 6px;">
+                <li>Riesgo Biológico, Osteomuscular y Psicosocial.</li>
+                <li>Riesgo Químico y Conservación Auditiva y Visual.</li>
             </ul>
-            <button class="btn-primary" onclick="closeModalWindow()">Entendido</button>
+            <button class="btn-primary" style="margin-top:15px;" onclick="switchSection('pve'); closeModalWindow();">Ver Infografía Completa</button>
         `,
         'modal-pausas': `
             <h2 style="color: var(--accent-orange); margin-bottom: 15px;"><i class="fa-solid fa-person-running"></i> Pausas Activas</h2>
