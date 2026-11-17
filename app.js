@@ -1,7 +1,31 @@
+// Enlaces de Google Forms por cada pestaña (reemplaza '#' con la URL de cada formulario)
+const SURVEY_LINKS = {
+    'riesgo-biologico': '#',
+    'epp': '#',
+    'bioseguridad': '#',
+    'plan-hospitalario': '#',
+    'pve': '#',
+    'pausas-activas': '#'
+};
+
 // Navigation Handling
 document.addEventListener('DOMContentLoaded', () => {
     const navItems = document.querySelectorAll('.nav-item');
     const sections = document.querySelectorAll('.content-section');
+
+    // Sync Google Forms survey buttons across all tabs
+    document.querySelectorAll('.survey-trigger').forEach(btn => {
+        const key = btn.getAttribute('data-survey');
+        const url = SURVEY_LINKS[key];
+        if (url && url !== '#') {
+            btn.setAttribute('href', url);
+        } else {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                alert('Esta encuesta aún no tiene enlace configurado. Pega el enlace de Google Forms en SURVEY_LINKS.');
+            });
+        }
+    });
 
     navItems.forEach(item => {
         item.addEventListener('click', () => {
